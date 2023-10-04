@@ -18,14 +18,20 @@ nomi colonne in inglese
 
 ## DATABASE AUTO
 
-| COLONNA               | TIPO         | ATTRIBUTI                              |
-| --------------------- | ------------ | -------------------------------------- |
-| ID AUTO               | BigInt       | INCREMENT, PRIMARY KEY, AUTO_INCREMENT |
-| IMMAGINE              | TEXT         | NOTNULL                                |
-| MARCA                 | VARCHAR(50)  | NOTNULL                                |
-| MODELLO               | VARCHAR(50)  | NOTNULL                                |
-| ANNO DI FABBRICAZIONE | YEAR         | NOTNULL                                |
-| KM                    | INT UNSIGNED | NULL                                   |
-| CARBURANTE            | CHAR(30)     | NOTNULL                                |
-| DESCRIZIONE           | TEXT         | NULL                                   |
-| PREZZO                | DECIMAL(7,2) | NULL                                   |
+| COLONNA     | TIPO         | ATTRIBUTI                   |
+| ----------- | ------------ | --------------------------- |
+| id          | bigInt       | PRIMARY KEY, AUTO_INCREMENT |
+| img         | text         | NOTNULL                     |
+| brand       | varchar(50)  | NOTNULL                     |
+| model       | varchar(50)  | NOTNULL                     |
+| manufacture | year         | NOTNULL                     |
+| km          | int          | NULL, UNSIGNED              |
+| fuel        | char(1)      | NOTNULL                     |
+| info        | text         | NULL                        |
+| price       | decimal(7,2) | NULL                        |
+
+fuel:
+D (diesel)
+G (gasoline)
+E (electric)
+H (hybrid)
